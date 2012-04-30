@@ -5,6 +5,7 @@ Feature: Prompt the user for their name
 
 	 Scenario: Verify the prompt shows up
 	 	   Given the application is running
+		   And I type "Sam"
 		   Then the output should contain "What is your name?"
 
 	 Scenario: Prompt the user for name
