@@ -17,3 +17,9 @@ Feature: Prompt the user for their choice of game
 		   And I type "Sam"
 		   When I type "1"
 		   Then the output should contain "I do not feel like playing that game"
+
+	 Scenario: Prompt the user for Global Thermonuclear War
+	 	   Given the application is running
+		   And I type "Sam"
+		   When I type "1"
+		   Then the output should contain "BOOM!"
