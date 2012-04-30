@@ -10,3 +10,9 @@ Feature: Prompt the user for their choice of game
 		   Then the output should contain "World of Warcraft"
 		   Then the output should contain "Tiddlywinks"
 		   Then the output should contain "A Punch to the Teeth"
+
+	 Scenario: Prompt the user for input that isn't Global Thermonuclear War
+	 	   Given the application is running
+		   And I type "Sam"
+		   When I type "1"
+		   Then the output should contain "I do not feel like playing that game"
