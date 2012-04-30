@@ -21,5 +21,5 @@ Feature: Prompt the user for their choice of game
 	 Scenario: Prompt the user for Global Thermonuclear War
 	 	   Given the application is running
 		   And I type "Sam"
-		   When I type "1"
+		   When I type "4"
 		   Then the output should contain "BOOM!"
